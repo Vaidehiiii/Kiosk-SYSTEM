@@ -1,4 +1,4 @@
-Live Demo : https://unruffled-shockley-2b0814.netlify.app/
+Live Demo : https://kiosk-system.vercel.app/
 
 ## Available Scripts
 
