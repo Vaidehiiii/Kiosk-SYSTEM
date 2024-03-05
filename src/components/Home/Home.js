@@ -7,7 +7,7 @@ const Home = () => {
     <div style={{ margin: '0 20px', display: 'flex' }}>
       <div style={{ flex: 2 }}>
         <br />
-        <h1 style={{ margin: '0 0 20px' }}>Welcome to The Burger Club</h1>
+        <h1 style={{ margin: '0 0 20px' }}> The Burger Club</h1>
         <p style={{ margin: '0 0 20px' }}>
           Indulge in a culinary journey like no other at The Burger Club! We invite you to savor the delightful symphony of flavors packed into our gourmet burgers. Each bite is a celebration of premium ingredients, meticulous preparation, and a passion for delivering a mouthwatering experience.
         </p>
