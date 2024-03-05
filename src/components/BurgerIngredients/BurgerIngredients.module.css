@@ -1,0 +1,27 @@
+.container {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.select {
+    padding-top: 7%;
+}
+
+.plus {
+    background-color: #FC9C1F !important;
+    width: 130px;
+    margin-right: 10% !important;
+    text-align: justify !important;
+}
+
+.minus {
+    background-color:  lemonchiffon !important;
+    width: 130px;
+}
+.minus:not(:disabled) {
+    color: rgb(224, 223, 223);
+}
+

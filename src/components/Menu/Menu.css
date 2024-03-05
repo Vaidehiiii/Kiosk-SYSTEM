@@ -1,0 +1,36 @@
+/* Menu.css */
+.modal-content.order-summary {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-items {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Add scroll functionality */
+form {
+    max-height: 300px; /* Set the maximum height for the form container */
+    overflow-y: auto; /* Enable vertical scrollbar if the content overflows */
+  }
+  
+  /* Add more styles as needed */
+  

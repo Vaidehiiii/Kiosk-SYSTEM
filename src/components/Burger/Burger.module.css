@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Burger {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: auto;
+    perspective: 5000px;
+    justify-content: center;
+    padding-right: 2em;
+}
+
+.text {
+    margin: 15% 0;
+    text-align: center;
+    color: white;
+}
+
+.dummy {
+    margin-bottom: 25px;
+}
+
+
+
+img {
+    position: relative;
+    filter: drop-shadow(5px 5px 5px rgb(71, 1, 1));
+}
+
+
+img[alt~='lettuce']{
+    z-index: 12;
+    bottom: 5%;
+    width: 400px;
+}
+
+img[alt~='onion']{
+    bottom: 5%;
+    z-index: 8;
+}
+
+img[alt~='pickle']{
+    bottom: 5%;
+    z-index: 5;
+}
+
+img[alt~='tomato'] {
+    bottom: 5%;
+    z-index: 6;
+}
+
+img[alt~='cheese']{
+    bottom: 5%;
+    z-index: 11;
+    width: 24.6em;
+    height: 3em;
+}
+
+img[alt~='chicken']{
+    bottom: 5%;
+    z-index: 12;
+    width: 24.6em;
+}
+
+img[alt~='paneer'] {
+    bottom: 5%;
+    z-index: 6;
+    height: 6;
+}
+
+
+img:last-child {
+    bottom: 7%;
+    z-index: 13;
+}
+
+.Burger > img:nth-of-type(1) {
+    top: 5%;
+    z-index: 13;  
+}
+
+.checkout {
+    background-color: #05d644 !important;
+    color: #fff !important;
+    width: 15em;
+    height: 3em;
+}
+
+.checkout:disabled {
+    background-color: rgb(223, 219, 219) !important;
+    color: rgba(0, 0, 0, 0.288) !important;
+}
+
+.summaryContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary {
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.actions {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.backdrop {
+    z-index: 2321;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 237, 237);
+    height: 10em;
+    width: 20em;
+    
+  }
+
+
+
+
+
+
