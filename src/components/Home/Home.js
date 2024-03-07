@@ -7,16 +7,16 @@ const Home = () => {
     <div style={{ margin: '0 20px', display: 'flex' }}>
       <div style={{ flex: 2 }}>
         <br />
-        <h1 style={{ margin: '0 0 20px' }}> The Burger Club</h1>
-        <p style={{ margin: '0 0 20px' }}>
+        <h1 style={{ margin: '0 0 20px', fontFamily: "Apple Chancery", fontSize: "30px"  }}> Welcome to the Burger Club</h1>
+        <p style={{ margin: '0 0 20px', fontFamily: "Apple Chancery", fontSize: "20px" }}>
           Indulge in a culinary journey like no other at The Burger Club! We invite you to savor the delightful symphony of flavors packed into our gourmet burgers. Each bite is a celebration of premium ingredients, meticulous preparation, and a passion for delivering a mouthwatering experience.
         </p>
 
-        <p style={{ margin: '0 0 20px' }}>
+        <p style={{ margin: '0 0 20px', fontFamily: "Apple Chancery", fontSize: "20px" }}>
           At The Burger Club, we believe in the art of crafting the perfect burger – a blend of juicy patties, fresh vegetables, and savory sauces, all nestled within a soft, golden bun. Whether you're a meat lover, a vegetarian enthusiast, or an adventurous foodie, our diverse menu has something extraordinary for every palate.
         </p>
 
-        <p style={{ margin: '0 0 20px' }}>
+        <p style={{ margin: '0 0 20px', fontFamily: "Apple Chancery", fontSize: "20px" }}>
           Join us in the celebration of good times, great company, and, of course, the most delicious burgers in town. Experience burger perfection at The Burger Club – where every bite tells a flavorful story!
         </p>
       </div>

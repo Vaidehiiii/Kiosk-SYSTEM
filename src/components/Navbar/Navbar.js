@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className={classes.title}>
           {/* <img src={logo} alt="logo" className={classes.logo} /> */}
           <img src="https://thumbs.dreamstime.com/z/fresh-tasty-burger-isolated-transparent-white-background-juicy-cheeseburger-menu-fastfood-beef-patty-tomatoes-cheese-281764095.jpg?w=768" alt="logo" className={classes.logo} />
-          <Typography variant="h5"><b>THE BURGER CLUB</b></Typography>
+          <Typography variant="h5" style={{ fontFamily: "Apple Chancery", fontSize: "30px" }}><b>THE BURGER CLUB</b></Typography>
         </div>
         <Button color="inherit" className={classes.linkButton} component={Link} to="/">Home</Button>
         <Button color="inherit" className={classes.linkButton} component={Link} to="/order-now">Menu</Button>

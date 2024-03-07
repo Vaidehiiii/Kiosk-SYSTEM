@@ -34,3 +34,24 @@ form {
   
   /* Add more styles as needed */
   
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing between menu items */
+  }
+  
+  .item-image {
+    margin-right: 10px; /* Add space between image and details */
+    text-align: center; /* Center the image horizontally */
+    margin-left: 300px;
+    
+  }
+  
+  
+.menu-item button {
+  margin: 0 10px; /* Adjust the space between buttons */
+}
+  .item-details {
+    flex: 1; /* Allow details to take remaining space */
+  }
+  

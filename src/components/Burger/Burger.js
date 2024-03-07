@@ -241,9 +241,6 @@ class Burger extends Component {
             Checkout
           </Button>
         </div>
-         
-
-
 
         <div>
           <Dialog
