@@ -1,0 +1,41 @@
+.feedback-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .feedback-form {
+    margin-top: 20px;
+  }
+  
+  .feedback-form button {
+    margin-top: 10px;
+  }
+  
+  .selected-emoji {
+    border: 2px solid blue; /* Adjust the border properties as needed */
+    border-radius: 50%; /* Makes the border circular */
+  }
+
+  .notification {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 70px;
+    border-radius: 15px;
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+
+  /* Add this CSS to increase the size of the emojis */
+.smiley-icons span {
+  font-size: 32px; /* Adjust the font size as needed */
+}
+
+  
+  

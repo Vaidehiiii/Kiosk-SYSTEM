@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
   navbar: {
     backgroundColor: '#ff8c00', // Change the background color as needed
   },
+  
   title: {
     flexGrow: 1,
     display: 'flex',

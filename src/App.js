@@ -8,6 +8,9 @@ import OrderNow from './components/OrderNow/OrderNow'; // Import the OrderNow co
 import Menu from './components/Menu/Menu'; // Import the Menu component
 import Customize from './components/Customize/Customize'; // Import the Customize component
 import BurgerPage from './BurgerPage'; // Import the BurgerPage component
+import Footer from './components/Footer/Footer';
+import FeedbackForm from './components/Feedback/FeedbackForm';
+import ContactUs from './components/ContactUs/ContactUs';
 
 const App = () => {
   return (
@@ -20,6 +23,12 @@ const App = () => {
           <Route path="/menu" component={Menu} />
           <Route path="/customize" component={Customize} />
           <Route path="/burger-page" component={BurgerPage} /> {/* Add route for BurgerPage */}
+        </Switch>
+        
+        <Switch>
+          <Route path="/feedback-form" component={FeedbackForm} />
+          <Route path="/feedback-form" component={FeedbackForm} />
+          <Route path="/contact-us" component={ContactUs} />
         </Switch>
       </div>
     </Router>

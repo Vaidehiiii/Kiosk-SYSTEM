@@ -1,0 +1,44 @@
+/* ContactUs.css */
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-container p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact-form .MuiFormControl-root {
+    width: 100%;
+  }
+  
+  .contact-form .MuiButton-root {
+    justify-self: center;
+  }
+  
+  .modal-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 70px;
+    border-radius: 15px;
+    z-index: 999; /* Ensure it appears above other elements */
+    text-align: center;
+  }
