@@ -3,6 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import Footer from '../Footer/Footer';
 
 const OrderNow = () => {
   const styles = {
@@ -13,17 +14,22 @@ const OrderNow = () => {
       margin: '0 auto',
       maxWidth: '1200px',
     },
+
     imageContainer: {
       flex: 1,
       marginRight: '20px',
     },
+
     image: {
       width: '100%',
       height: 'auto',
     },
+
     contentContainer: {
       flex: 1,
+      fontSize: 20,
     },
+
     orderButton: {
       backgroundColor: '#ff8c00', /* Orange color, you can change it */
       color: '#fff',
@@ -36,6 +42,7 @@ const OrderNow = () => {
   };
 
   return (
+    <div>
     <div style={styles.orderNowContainer}>
       <div style={styles.imageContainer}>
         <br/>
@@ -55,6 +62,14 @@ const OrderNow = () => {
           <button style={styles.orderButton}>Order Now</button>
         </Link>
       </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <Footer/>
     </div>
   );
 };

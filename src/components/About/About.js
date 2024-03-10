@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className="about-container">
      
-      <h1 style={{textAlign: 'center' }}>Welcome to The Burger Club!</h1>
+      <h1 style={{textAlign: 'center' }}>Welcome to The Burger Club where every bite tells a flavorful tale!</h1>
       <img src={require('../../images/pexels-katerina-holmes-59074361080p-ezgif.com-speed.gif')} style={{ width: '60',  marginTop: '20px', display: 'block', margin: '0 auto'}} alt="Your GIF" />
       <br/>
       <br/>
@@ -57,6 +57,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <p style={{fontSize: 23, textAlign: 'center'}}>Come join us on a culinary journey like no other. Experience burger perfection at The Burger Club—where every bite tells a flavorful story! </p>
       <br />
       <br />
       <br />

@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import { useHistory } from 'react-router-dom';
-
+import Footer from '../Footer/Footer';
 
 const Customize = () => {
   
@@ -39,6 +39,7 @@ const Customize = () => {
   };
 
   return (
+    <div>
     <div style={styles.customizeContainer}>
       <div style={styles.imageContainer}>
         <img
@@ -54,21 +55,27 @@ const Customize = () => {
       <br />
       <br />
       <br />
-        <h1 style={{ fontFamily: "Apple Chancery" }}>Picky Eater?</h1>
+        <h1 style={{ fontFamily: "Apple Chancery" }}>Picky Eater ?</h1>
         <br />
-        <p >"Create your perfect burger masterpiece with our customizable burger section, where you choose each ingredient for a unique and delicious experience."</p>
+        <p>Create your perfect burger masterpiece with our customizable burger section, where you choose each ingredient for a unique and delicious experience.</p>
         <br />
         <br />
         <Link to="/burger-page">
           <button style={styles.orderButton}>Customize Now!</button>
         </Link>
-
-
-
+        <br />
+        <br />
+        <br />
         <br />
         <br />
         <br />
       </div>
+      </div>
+      <br />
+        <br />
+        <br />
+        <br />
+      <Footer/>
     </div>
   );
 };
