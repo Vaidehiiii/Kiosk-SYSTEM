@@ -1,6 +1,6 @@
 /* Menu.css */
 .modal-content.order-summary {
-    max-width: 700px;
+    width: 800px;
     margin: auto;
     padding: 20px;
     background: #fff;
@@ -53,5 +53,20 @@ form {
 }
   .item-details {
     flex: 1; /* Allow details to take remaining space */
+  }
+  
+
+
+  /* CHANGE */
+  .alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
   

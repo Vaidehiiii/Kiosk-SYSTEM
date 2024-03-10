@@ -9,6 +9,7 @@ import Menu from './components/Menu/Menu'; // Import the Menu component
 import Customize from './components/Customize/Customize'; // Import the Customize component
 import BurgerPage from './BurgerPage'; // Import the BurgerPage component
 import Footer from './components/Footer/Footer';
+import About from './components/About/About'
 import FeedbackForm from './components/Feedback/FeedbackForm';
 import ContactUs from './components/ContactUs/ContactUs';
 
@@ -26,7 +27,7 @@ const App = () => {
         </Switch>
         
         <Switch>
-          <Route path="/feedback-form" component={FeedbackForm} />
+          <Route path="/about" component={About} />
           <Route path="/feedback-form" component={FeedbackForm} />
           <Route path="/contact-us" component={ContactUs} />
         </Switch>

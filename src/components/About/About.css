@@ -1,0 +1,77 @@
+/* About.css */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Apple Chancery";
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .about-container p {
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: "Apple Chancery";
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .section {
+    margin-top: 40px;
+    font-family: "Apple Chancery";
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .section h2 {
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Apple Chancery";
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .text {
+    flex: 1.2;
+  }
+  
+  .image {
+    flex: 1;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image1 {
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .image1 img {
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .text1 {
+    flex: 1;
+    margin-left: 40;
+    font-family: "Apple Chancery";
+    font-size: 22px;
+  }
+  

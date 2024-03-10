@@ -8,6 +8,10 @@ import "./Menu.css";
 import { useHistory } from "react-router-dom";
 import upiQRCodeImage from "../../images/upiQRCodeImage.png"; 
 import { AddCircleRounded } from "@material-ui/icons";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+
 
 const Menu = () => {
   // Sample burger, side dish, and beverage items
@@ -149,9 +153,11 @@ const renderMenuItems = (items, category) => {
           </div>
           <div className="item-details">
             <h2 style={{ fontFamily: "Apple Chancery", fontSize: "28px" }}>{item.name}</h2>
-            <p>Price: {item.price} INR</p>
-            <p>Calories: {item.calories}</p>
-            <label>Quantity:</label>
+            <br/>
+            <p style={{ fontFamily: "Apple Chancery", fontSize: "22px" }}>Price: {item.price} INR</p>
+            <p style={{ fontFamily: "Apple Chancery", fontSize: "22px" }}>Calories: {item.calories}</p>
+            <p style={{ fontFamily: "Apple Chancery", fontSize: "22px" }}>Quantity:</p>
+            <br/>
             <div className="quantity-controls">
               <button style={buttonStyle} onClick={() => removeFromCart(category, item.name)}> - </button>
               <span>{getQuantity(category, item.name)}</span>
@@ -225,10 +231,15 @@ const renderMenuItems = (items, category) => {
 
   // Function to handle checkout
   const handleCheckout = () => {
+        // Show order completion message
+        // setOrderCompleted(true);
+
     // Perform checkout logic here (e.g., show thank you message)
-    alert("Order completed. Thank you!");
+     alert("Order completed. Thank you!");
+
     // Optionally, you can reset the cart and user details after checkout
     setCart({});
+
     setUserDetails({
       name: "",
       phoneNumber: "",
@@ -236,8 +247,11 @@ const renderMenuItems = (items, category) => {
       tableNumber: "",
       paymentMode: "",
     });
+
     handleOrderSummaryClose(); // Close the order summary modal
   };
+
+  
 
   // Function to render cart items
   const renderCartItems = () => {
@@ -248,7 +262,7 @@ const renderMenuItems = (items, category) => {
 
       return (
          <div className="item-details">
-           <p style={{ fontSize: "20px" }}>{item.name}</p>
+           <h2 style={{ fontSize: "20px" }}>{item.name}</h2>
            <p style={{ fontSize: "18px" }}>Quantity: {quantity}</p>
            <p style={{ fontSize: "18px" }}>Price: {item.price * quantity} INR</p>
          </div>
@@ -287,6 +301,7 @@ const renderMenuItems = (items, category) => {
       </div>
     );
   };
+  
 
   // Check if all user details are filled and payment mode is selected
 const isCheckoutDisabled =
@@ -295,6 +310,22 @@ const isCheckoutDisabled =
 !userDetails.email ||
 !userDetails.tableNumber ||
 !userDetails.paymentMode;
+
+
+// Modal state for order completion message
+const [orderCompleted, setOrderCompleted] = useState(false);
+
+// Function to handle opening order completion modal
+const handleOrderComplete = () => {
+  setOrderCompleted(true);
+  
+};
+
+// Function to handle closing order completion modal
+const handleCloseOrderComplete = () => {
+  setOrderCompleted(false);
+};
+
 
 
   // Modal content for order summary
@@ -372,13 +403,14 @@ const isCheckoutDisabled =
         <Button variant="contained" color="primary" onClick={handleCheckout}  disabled={isCheckoutDisabled}>
           Checkout
         </Button>
+        
         <Button
           variant="contained"
           color="secondary"
-          onClick={handleOrderSummaryClose}
-        >
+          onClick={handleOrderSummaryClose}>
           Cancel
         </Button>
+        
       </form>
     </div>
   );
@@ -410,6 +442,8 @@ const isCheckoutDisabled =
       <br />
       <h1 style={{ fontFamily: "Apple Chancery", fontSize: "45px" }}>Menu Card</h1>
       <br />
+      <p style={{ fontFamily: "Apple Chancery", fontSize: "22px" }}>Explore our exquisite menu:</p>
+      <br/>
       <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px"}}>Burgers</h2>
       <br />
       {renderMenuItems(burgerItems, "burgers")}
@@ -433,7 +467,9 @@ const isCheckoutDisabled =
         <Modal open={open} onClose={handleClose}>
           {orderSummaryModalBody}
         </Modal>
+       
       </div>
+
       <br />
       <br />
       <br />
