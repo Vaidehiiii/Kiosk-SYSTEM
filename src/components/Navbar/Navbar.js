@@ -47,7 +47,7 @@ import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, IconButton, Button } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
-import logo from '../../images/logo.png';
+import logo from '../../images/LOGO.jpg';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
@@ -77,7 +77,7 @@ const Navbar = () => {
       <Toolbar>
         <div className={classes.title}>
           {/* <img src={logo} alt="logo" className={classes.logo} /> */}
-          <img src="https://thumbs.dreamstime.com/z/fresh-tasty-burger-isolated-transparent-white-background-juicy-cheeseburger-menu-fastfood-beef-patty-tomatoes-cheese-281764095.jpg?w=768" alt="logo" className={classes.logo} />
+          <img src={require('../../images/LOGO.jpg')} alt="logo" className={classes.logo} />
           <Typography variant="h5" style={{ fontFamily: "Apple Chancery", fontSize: "30px" }}><b>THE BURGER CLUB</b></Typography>
         </div>
         <Button color="inherit" className={classes.linkButton} component={Link} to="/">Home</Button>
