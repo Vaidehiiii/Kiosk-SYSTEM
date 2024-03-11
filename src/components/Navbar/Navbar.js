@@ -61,8 +61,9 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     marginRight: theme.spacing(1),
-    width: 60, // Adjust the width of your logo
-    height: 60,
+    width: 55, // Adjust the width of your logo
+    height: 55,
+    borderRadius: 50,
   },
   linkButton: {
     marginRight: theme.spacing(2), // Adjust the spacing as needed

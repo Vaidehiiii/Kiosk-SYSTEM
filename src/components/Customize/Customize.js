@@ -23,6 +23,7 @@ const Customize = () => {
     image: {
       width: '100%',
       height: 'auto',
+      width: "650px"
     },
     contentContainer: {
       flex: 1,
@@ -57,7 +58,7 @@ const Customize = () => {
       <br />
         <h1 style={{ fontFamily: "Apple Chancery" }}>Picky Eater ?</h1>
         <br />
-        <p>Create your perfect burger masterpiece with our customizable burger section, where you choose each ingredient for a unique and delicious experience.</p>
+        <p style={{fontSize:20, fontFamily: "Apple Chancery"}}>Create your perfect burger masterpiece with our customizable burger section, where you choose each ingredient for a unique and delicious experience.</p>
         <br />
         <br />
         <Link to="/burger-page">

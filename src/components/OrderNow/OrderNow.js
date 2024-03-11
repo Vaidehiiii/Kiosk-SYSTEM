@@ -23,6 +23,8 @@ const OrderNow = () => {
     image: {
       width: '100%',
       height: 'auto',
+      width: "650px",
+      heignt: "650px",
     },
 
     contentContainer: {
@@ -63,6 +65,8 @@ const OrderNow = () => {
         </Link>
       </div>
         </div>
+        <br />
+        <br />
         <br />
         <br />
         <br />

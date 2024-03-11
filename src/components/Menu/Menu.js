@@ -8,9 +8,8 @@ import "./Menu.css";
 import { useHistory } from "react-router-dom";
 import upiQRCodeImage from "../../images/upiQRCodeImage.png"; 
 import { AddCircleRounded } from "@material-ui/icons";
-import Dialog from "@material-ui/core/Dialog";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogActions from "@material-ui/core/DialogActions";
+
+
 
 
 const Menu = () => {
@@ -63,17 +62,20 @@ const Menu = () => {
     {
       name: "French Fries",
       price: 120,
+      calories: 300,
       image:
         "https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/appetisers/dirty-fries/dirty-fries-main-header.jpg",
     },
     {
       name: "Veg Cheese Nuggets",
       price: 150,
+      calories: 200,
       image: "https://www.ranioil.com/wp-content/uploads/2022/01/veg-soy.png",
     },
     {
       name: "Chicken Nuggets",
       price: 180,
+      calories: 250,
       image:
         "https://mediavine-res.cloudinary.com/image/upload/s--OhG-gDPd--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1602140944/ansc0aoqxvxvg5qsyswi.jpg",
     },
@@ -83,18 +85,21 @@ const Menu = () => {
     {
       name: "Coca Cola",
       price: 50,
+      calories: 140,
       image:
         "https://www.just-drinks.com/wp-content/uploads/sites/29/2023/02/Coca-Cola-Europacific-Partners.png",
     },
     {
       name: "Sprite / Limca",
       price: 50,
+      calories: 140,
       image:
         "http://st.depositphotos.com/1000647/4405/i/450/depositphotos_44059545-Soft-drink-Sprite.jpg",
     },
     {
       name: "Fanta / Miranda",
       price: 50,
+      calories: 140,
       image:
         "https://facts.net/wp-content/uploads/2023/06/Fanta-can-730x421.jpeg",
     },
@@ -229,13 +234,14 @@ const renderMenuItems = (items, category) => {
     setUserDetails((prevDetails) => ({ ...prevDetails, [field]: value }));
   };
 
+  
+
   // Function to handle checkout
   const handleCheckout = () => {
-        // Show order completion message
-        // setOrderCompleted(true);
-
+ 
     // Perform checkout logic here (e.g., show thank you message)
-     alert("Order completed. Thank you!");
+    const message = "Order completed. Thank you!";
+    showStyledMessage(message);
 
     // Optionally, you can reset the cart and user details after checkout
     setCart({});
@@ -248,10 +254,40 @@ const renderMenuItems = (items, category) => {
       paymentMode: "",
     });
 
+
     handleOrderSummaryClose(); // Close the order summary modal
   };
 
-  
+  function showStyledMessage(message) {
+    // Create a div element for the styled message
+    const styledMessage = document.createElement('div');
+    
+    // Apply custom styling to the message
+    styledMessage.style.backgroundColor = '#ffffff';
+    styledMessage.style.color = '#000000';
+    styledMessage.style.fontFamily = 'Apple Chancery';
+    styledMessage.style.fontSize = '25px';
+    styledMessage.style.padding = '50px';
+    styledMessage.style.border = '1px solid #000000';
+    styledMessage.style.borderRadius = '5px';
+    styledMessage.style.position = 'fixed';
+    styledMessage.style.top = '50%';
+    styledMessage.style.left = '50%';
+    styledMessage.style.transform = 'translate(-50%, -50%)';
+    styledMessage.style.zIndex = '1000'; // Set a high z-index value
+    
+    // Set the message content
+    styledMessage.textContent = message;
+    
+    // Append the styled message to the document body
+    document.body.appendChild(styledMessage);
+    
+    // Hide the message after a certain duration (e.g., 3 seconds)
+    setTimeout(() => {
+        styledMessage.remove();
+    }, 3000);
+}
+
 
   // Function to render cart items
   const renderCartItems = () => {
