@@ -45,9 +45,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, IconButton, Button } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
-import logo from '../../images/LOGO.jpg';
+// import logo from '../../images/LOGO.jpg';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
@@ -84,6 +84,7 @@ const Navbar = () => {
         <Button color="inherit" className={classes.linkButton} component={Link} to="/">Home</Button>
         <Button color="inherit" className={classes.linkButton} component={Link} to="/order-now">Menu</Button>
         <Button color="inherit" className={classes.linkButton} component={Link} to="/customize">Customize</Button>
+        <Button color="inherit" className={classes.linkButton} component={Link} to="/suggestions">Recommend</Button>
         {/* <IconButton edge="end" color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton> */}

@@ -12,6 +12,8 @@ import Footer from './components/Footer/Footer';
 import About from './components/About/About'
 import FeedbackForm from './components/Feedback/FeedbackForm';
 import ContactUs from './components/ContactUs/ContactUs';
+import Suggestions from './components/Suggestions/suggestions';
+
 
 const App = () => {
   return (
@@ -23,7 +25,8 @@ const App = () => {
           <Route path="/order-now" component={OrderNow} />
           <Route path="/menu" component={Menu} />
           <Route path="/customize" component={Customize} />
-          <Route path="/burger-page" component={BurgerPage} /> {/* Add route for BurgerPage */}
+          <Route path="/burger-page" component={BurgerPage} /> 
+          <Route path="/suggestions" component={Suggestions} />
         </Switch>
         
         <Switch>

@@ -1,0 +1,92 @@
+/* SuggestionPage.css */
+
+/* Container styling */
+.suggestion-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Input fields styling */
+  .suggestion-container div {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styling */
+  .suggestion-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Select input styling */
+  .suggestion-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Checkbox input styling */
+  .suggestion-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Add styles for checkbox container */
+  .checkbox-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Add styles for individual checkbox labels */
+  .checkbox-label {
+    display: flex;
+    margin-right: 10px; /* Adjust spacing between checkboxes */
+    align-items: center;
+  }
+  
+  /* Recommendation button styling */
+  .suggestion-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .suggestion-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Recommendations container styling */
+  #recommendations {
+    margin-top: 20px;
+  }
+  
+  /* Individual option styling */
+  .option {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .option img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .fixed-size-image {
+    width: 450px; /* Adjust the width as per your requirement */
+    height: 350px; /* Maintain aspect ratio */
+  }
+  
