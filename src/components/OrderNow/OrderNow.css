@@ -1,0 +1,73 @@
+/* OrderNow.css */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100px); /* Slides from the right */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); /* Corrected position */
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Bounce effect */
+    }
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.8); /* Start smaller */
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1); /* Full size */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .orderNowContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1300px;
+  }
+  
+
+  .imageContainer {
+    flex: 1;
+    margin-right: 20px; /* Correct property name */
+    animation: zoomIn 1s zoomIn; /* Apply zoom in animation */
+  }
+
+  .contentContainer {
+    flex: 1;
+    font-size: 20px; /* Corrected syntax */
+    animation: slideIn 1s ease-in-out 1s; /* Staggered animation */
+  }
+  
+  .orderButton {
+    background-color: #ff8c00; /* Corrected property name */
+    color: #fff;
+    padding: 10px 20px; /* Corrected syntax */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Corrected syntax */
+    animation: bounce 1s infinite 2s; /* Bounce animation with delay */
+  }
+  

@@ -44,29 +44,40 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography, IconButton, Button } from '@material-ui/core';
-// import MenuIcon from '@material-ui/icons/Menu';
+import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-// import logo from '../../images/LOGO.jpg';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
-    backgroundColor: '#ff8c00', // Change the background color as needed
+    backgroundColor: '#ff8c00', // Background color of the navbar
+    transition: 'background-color 0.5s ease', // Smooth transition for navbar background
   },
-  
+
   title: {
     flexGrow: 1,
     display: 'flex',
     alignItems: 'center',
   },
+
   logo: {
     marginRight: theme.spacing(1),
-    width: 55, // Adjust the width of your logo
+    width: 55, // Width of your logo
     height: 55,
-    borderRadius: 50,
+    borderRadius: '50%', // Round logo
+    transition: 'transform 0.3s ease', // Smooth transition for logo
   },
+
   linkButton: {
-    marginRight: theme.spacing(2), // Adjust the spacing as needed
+    marginRight: theme.spacing(2),
+    transition: 'color 0.3s ease, transform 0.3s ease', // Smooth transitions for buttons
+  },
+
+  // Hover effect for navbar and link buttons
+  hoverEffect: {
+    '&:hover': {
+      backgroundColor: '#ff7400', // Change on hover
+      transform: 'scale(1.05)', // Slight scale effect
+    },
   },
 }));
 
@@ -77,17 +88,23 @@ const Navbar = () => {
     <AppBar position="static" className={classes.navbar}>
       <Toolbar>
         <div className={classes.title}>
-          {/* <img src={logo} alt="logo" className={classes.logo} /> */}
-          <img src={require('../../images/LOGO.jpg')} alt="logo" className={classes.logo} />
-          <Typography variant="h5" style={{ fontFamily: "Apple Chancery", fontSize: "30px" }}><b>THE BURGER CLUB</b></Typography>
+          <img src={require('../../images/LOGO.jpg')} alt="logo" className={`${classes.logo} ${classes.hoverEffect}`} />
+          <Typography variant="h5" style={{ fontFamily: 'Apple Chancery', fontSize: '30px' }}>
+            <b>THE BURGER CLUB</b>
+          </Typography>
         </div>
-        <Button color="inherit" className={classes.linkButton} component={Link} to="/">Home</Button>
-        <Button color="inherit" className={classes.linkButton} component={Link} to="/order-now">Menu</Button>
-        <Button color="inherit" className={classes.linkButton} component={Link} to="/customize">Customize</Button>
-        <Button color="inherit" className={classes.linkButton} component={Link} to="/suggestions">Recommend</Button>
-        {/* <IconButton edge="end" color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton> */}
+        <Button color="inherit" className={`${classes.linkButton} ${classes.hoverEffect}`} component={Link} to="/">
+          Home
+        </Button>
+        <Button color="inherit" className={`${classes.linkButton} ${classes.hoverEffect}`} component={Link} to="/order-now">
+          Menu
+        </Button>
+        <Button color="inherit" className={`${classes.linkButton} ${classes.hoverEffect}`} component={Link} to="/customize">
+          Customize
+        </Button>
+        <Button color="inherit" className={`${classes.linkButton} ${classes.hoverEffect}`} component={Link} to="/suggestions">
+          Recommend
+        </Button>
       </Toolbar>
     </AppBar>
   );

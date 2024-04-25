@@ -1,0 +1,78 @@
+
+  /* Home.css */
+
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .text-container {
+    flex: 2;
+  }
+  
+  .text-container h1 {
+    font-family: "Apple Chancery";
+    font-size: 35px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; /* Heading enters first */
+    transition: transform 0.5s;
+  }
+  
+  .text-container p {
+    font-family: "Apple Chancery";
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .text-container .slide-in-1 {
+    animation: slideIn 1s ease-in-out 1s; /* Delay for first paragraph */
+  }
+  
+  .text-container .slide-in-2 {
+    animation: slideIn 1s ease-in-out 1.5s; /* Delay for second paragraph */
+  }
+  
+  .text-container .slide-in-3 {
+    animation: slideIn 1s ease-in-out 2s; /* Delay for third paragraph */
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-left: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .image-container img {
+    width: 93%;
+    animation: fadeIn 1s ease-in-out; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100px); /* Horizontal slide-in */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

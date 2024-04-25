@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import './SuggestionPage.css';
 
@@ -112,7 +114,7 @@ const SuggestionPage = () => {
                 {recommendations.length > 0 && (
                     <>
                         <h2>Recommendations</h2>
-                        <br />
+                       
                         <ul>
                             {recommendations.map((option, index) => (
                                 <li key={index}>
