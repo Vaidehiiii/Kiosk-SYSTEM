@@ -49,7 +49,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
-    backgroundColor: '#ff8c00', // Background color of the navbar
+    backgroundColor: '#8b0000', // Background color of the navbar
     transition: 'background-color 0.5s ease', // Smooth transition for navbar background
   },
 
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   // Hover effect for navbar and link buttons
   hoverEffect: {
     '&:hover': {
-      backgroundColor: '#ff7400', // Change on hover
+      backgroundColor: '#b22222', // Change on hover
       transform: 'scale(1.05)', // Slight scale effect
     },
   },
@@ -89,7 +89,7 @@ const Navbar = () => {
       <Toolbar>
         <div className={classes.title}>
           <img src={require('../../images/LOGO.jpg')} alt="logo" className={`${classes.logo} ${classes.hoverEffect}`} />
-          <Typography variant="h5" style={{ fontFamily: 'Apple Chancery', fontSize: '30px' }}>
+          <Typography variant="h5" style={{ fontFamily: 'Apple Chancery', fontSize: '30px', color: 'white' }}>
             <b>THE BURGER CLUB</b>
           </Typography>
         </div>

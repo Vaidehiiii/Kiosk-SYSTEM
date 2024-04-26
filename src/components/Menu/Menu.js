@@ -33,7 +33,7 @@ const Menu = () => {
       name: "Paneer Tikka Burger",
       price: 320,
       calories: 350,
-      image: "https://i.ytimg.com/vi/fNIZnXmxQUE/maxresdefault.jpg",
+      image: "https://mcdonaldsblog.in/wp-content/uploads/2016/06/mcspicy-paneer-1-1.jpg",
     },
     {
       name: "American Chicken Cheese Burger",
@@ -135,7 +135,7 @@ const Menu = () => {
     fontSize: '1.5rem', // Adjust font size as needed
     padding: '0.1rem 1rem', // Adjust padding as needed
     borderRadius: '20px', // Adjust border radius as needed
-    background: '#ff8c00', // Adjust background color as needed
+    background: '#8b0000', // Adjust background color as needed
     color: 'white', // Adjust text color as needed
     border: 'none', // Remove button border
     cursor: 'pointer', // Show pointer cursor on hover
@@ -175,7 +175,6 @@ const renderMenuItems = (items, category) => {
     </div>
   );
 };
-
 
   // Function to get quantity based on category and item name
   const getQuantity = (category, itemName) => {
@@ -234,7 +233,6 @@ const renderMenuItems = (items, category) => {
     setUserDetails((prevDetails) => ({ ...prevDetails, [field]: value }));
   };
 
-  
 
   // Function to handle checkout
   const handleCheckout = () => {
@@ -497,9 +495,13 @@ const handleCloseOrderComplete = () => {
       <br />
       {/* Cart section */}
       <div className="cart-section">
-        <Button variant="contained" color="primary" onClick={handleOpen}>
-          Place Order
-        </Button>
+      <Button
+  variant="contained"
+  style={{ backgroundColor: '#8b0000', color: '#ffffff' }} // Background and text color
+  onClick={handleOpen}
+>
+  Place Order
+</Button>
         <Modal open={open} onClose={handleClose}>
           {orderSummaryModalBody}
         </Modal>

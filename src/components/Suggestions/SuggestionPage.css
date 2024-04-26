@@ -67,7 +67,7 @@
 /* Button with hover and click animations */
 .suggestion-container button {
   padding: 10px 20px;
-  background-color: hsl(37, 100%, 50%);
+  background-color: #8b0000;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -76,7 +76,7 @@
 }
 
 .suggestion-container button:hover {
-  background-color: #0056b3; /* Change background color on hover */
+  background-color: #d32a2a; /* Change background color on hover */
   transform: scale(1.05); /* Slight zoom on hover */
 }
 

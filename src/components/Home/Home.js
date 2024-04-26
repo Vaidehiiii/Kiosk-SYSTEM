@@ -43,17 +43,16 @@
 
 
 // Home.js
-
-import React from 'react';
-import Footer from '../Footer/Footer';
-import './Home.css';
+import React from "react";
+import Footer from "../Footer/Footer";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home-container">
       <div className="content-container">
         <div className="text-container">
-          <h1 className="fade-in">Welcome to the Burger Club</h1>
+          <h1 className="fade-in">Welcome to the Burger Club !</h1>
           <p className="slide-in-1">
             Indulge in a culinary journey like no other at The Burger Club! We invite you to savor the delightful symphony of flavors packed into our gourmet burgers. Each bite is a celebration of premium ingredients, meticulous preparation, and a passion for delivering a mouthwatering experience.
           </p>
@@ -64,21 +63,22 @@ const Home = () => {
             Join us in the celebration of good times, great company, and, of course, the most delicious burgers in town. Experience burger perfection at The Burger Club – where every bite tells a flavorful story!
           </p>
         </div>
-        <div className="image-container">
+        <div className="image-container fade-in-image"> {/* Apply the animation class */}
           <img
-            src={require('../../images/pexels-morena-vw-60177241080p-ezgif.com-video-to-gif-converter.gif')}
+            src={require("../../images/pexels-morena-vw-60177241080p-ezgif.com-video-to-gif-converter.gif")}
             alt="Your GIF"
           />
         </div>
       </div>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Footer />
     </div>
   );
 };
 
 export default Home;
+
 
 
 

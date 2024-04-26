@@ -115,7 +115,7 @@ const Customize = () => {
       animation: 'slideIn 1s ease-in-out', // Slide-in for content container
     },
     orderButton: {
-      backgroundColor: '#ff8c00',
+      backgroundColor: '#8b0000',
       color: '#fff',
       padding: '10px 20px',
       fontSize: '16px',
