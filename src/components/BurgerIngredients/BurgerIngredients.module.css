@@ -11,17 +11,19 @@
 }
 
 .plus {
-    background-color: #FC9C1F !important;
+    background-color: #54442d !important;
     width: 130px;
     margin-right: 10% !important;
     text-align: justify !important;
 }
 
 .minus {
-    background-color:  lemonchiffon !important;
+    background-color: rgba(152, 118, 101, 0.95) !important;
+    color: antiquewhite;
     width: 130px;
 }
 .minus:not(:disabled) {
     color: rgb(224, 223, 223);
+    color: antiquewhite;
 }
 

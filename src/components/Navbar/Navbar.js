@@ -49,7 +49,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
-    backgroundColor: '#8b0000', // Background color of the navbar
+    // backgroundColor: '#8b0000', // Background color of the navbar
+    // backgroundColor: '#ffaa33',
+    backgroundColor: '#311900',
     transition: 'background-color 0.5s ease', // Smooth transition for navbar background
   },
 
@@ -75,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   // Hover effect for navbar and link buttons
   hoverEffect: {
     '&:hover': {
-      backgroundColor: '#b22222', // Change on hover
+      backgroundColor: '#6f4e37', // Change on hover
       transform: 'scale(1.05)', // Slight scale effect
     },
   },

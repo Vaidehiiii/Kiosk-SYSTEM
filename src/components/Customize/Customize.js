@@ -143,7 +143,7 @@ const Customize = () => {
           <br />
           <br />
           <br />
-          <h1 style={{ fontFamily: 'Apple Chancery' }}>Picky Eater?</h1>
+          <h1 style={{ fontFamily: 'Apple Chancery',  color: "#8b0000" }}>Picky Eater?</h1>
           <br />
           <p style={{ fontSize: 20, fontFamily: 'Apple Chancery' }}>
             Create your perfect burger masterpiece with our customizable burger section, where you choose each ingredient for a unique and delicious experience.

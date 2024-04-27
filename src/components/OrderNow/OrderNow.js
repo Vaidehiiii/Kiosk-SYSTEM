@@ -209,7 +209,7 @@ const OrderNow = () => {
         </div>
         <div style={styles.contentContainer}>
           <br />
-          <h1 style={{ fontFamily: 'Apple Chancery' }}>Hungry?</h1>
+          <h1 style={{ fontFamily: 'Apple Chancery', color: '#8b0000' }}>Hungry?</h1>
           <br />
           <p>Explore our delicious menu and place your order now!</p>
           <br />

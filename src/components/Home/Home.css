@@ -18,12 +18,12 @@
 }
 
 .text-container h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bebas Neue", sans-serif; 
   font-size: 35px;
   margin-bottom: 20px;
   animation: fadeIn 1s ease-in-out; /* Heading enters first */
   transition: transform 0.5s;
-  color: maroon;
+  color: #553c22;
 }
 
 .text-container p {
@@ -34,14 +34,24 @@
 
 .text-container .slide-in-1 {
   animation: slideIn 1s ease-in-out 1s; /* Delay for first paragraph */
+  background-color: rgb(230, 223, 215, 0.6);
+  /* font-family: "Apple Chancery";
+  font-size: 60px; */
 }
 
 .text-container .slide-in-2 {
   animation: slideIn 1s ease-in-out 1.5s; /* Delay for second paragraph */
+  background-color: rgb(230, 223, 215, 0.6);
+  /* font-family: "Ubuntu";
+  font-size: 60px; */
 }
 
 .text-container .slide-in-3 {
   animation: slideIn 1s ease-in-out 2s; /* Delay for third paragraph */
+  /* font-family: "Bebas Neue", sans-serif; 
+  color: orange;
+  font-size: 120px;
+  font-style: italic; */
 }
 
 .image-container {

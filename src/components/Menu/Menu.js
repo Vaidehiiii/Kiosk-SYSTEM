@@ -474,21 +474,21 @@ const handleCloseOrderComplete = () => {
   return (
     <div style={{ textAlign: "center" }}>
       <br />
-      <h1 style={{ fontFamily: "Apple Chancery", fontSize: "45px" }}>Menu Card</h1>
+      <h1 style={{ fontFamily: "Apple Chancery", fontSize: "45px", color: "#8b0000" }}>Menu Card</h1>
       <br />
       <p style={{ fontFamily: "Apple Chancery", fontSize: "22px" }}>Explore our exquisite menu:</p>
       <br/>
-      <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px"}}>Burgers</h2>
+      <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px",  color: "#8b0000"}}>Burgers</h2>
       <br />
       {renderMenuItems(burgerItems, "burgers")}
       <br />
       <br />
-      <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px" }}>Side Dishes</h2>
+      <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px",  color: "#8b0000" }}>Side Dishes</h2>
       <br />
       {renderMenuItems(sideDishItems, "sideDishes")}
       <br />
       <br />
-      <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px" }}>Beverages</h2>
+      <h2 style={{ fontFamily: "Apple Chancery", fontSize: "30px",  color: "#8b0000" }}>Beverages</h2>
       <br />
       {renderMenuItems(beverageItems, "beverages")}
       <br />

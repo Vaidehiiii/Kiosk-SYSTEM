@@ -30,6 +30,8 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  /* color: #8b0000; */
+  font-family: sans-serif;
 }
 
 /* Select inputs with transition effect */
@@ -67,7 +69,7 @@
 /* Button with hover and click animations */
 .suggestion-container button {
   padding: 10px 20px;
-  background-color: #8b0000;
+  background-color: #702626;
   color: #fff;
   border: none;
   border-radius: 5px;

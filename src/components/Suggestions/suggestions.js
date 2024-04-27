@@ -72,7 +72,8 @@ const SuggestionPage = () => {
 
     return (
         <div className="suggestion-container">
-            <h1>Suggestion Page</h1>
+            <h1 style={{ fontFamily: "Apple Chancery", fontSize: "30px",  color: "#8b0000" }}>Suggestion Page</h1>
+            <br/>
             <div>
                 <label htmlFor="tastePreference">Taste Preference:</label>
                 <select id="tastePreference">

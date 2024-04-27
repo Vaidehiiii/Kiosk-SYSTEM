@@ -28,7 +28,7 @@ class BurgerIngredients extends Component {
                 <Button  className={classes.plus} size='large' variant="contained" color="primary" onClick={() => this.addIngredient(type)}>
                     + {type}
                 </Button>
-                <Button  className={classes.minus} size='large' disabled={this.props.ingredients[type] === 0} variant="outlined"  onClick={() => this.removeIngredient(type)}>
+                <Button  className={classes.minus} size='large'  disabled={this.props.ingredients[type] === 0} variant="outlined"  onClick={() => this.removeIngredient(type)}>
                     - {type}
                 </Button>
             </div>
@@ -39,7 +39,7 @@ class BurgerIngredients extends Component {
 
         return (
             <div className={classes.container}>
-                <Typography variant='h4' style={{color: '#fff'}}>{this.props.totalPrice.toFixed(2)} Rs</Typography>
+                <Typography variant='h4' style={{color: 'black'}}>{this.props.totalPrice.toFixed(2)} Rs</Typography>
                 {this.renderButtons()}
             </div>
         )

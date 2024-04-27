@@ -52,16 +52,20 @@ const Home = () => {
     <div className="home-container">
       <div className="content-container">
         <div className="text-container">
-          <h1 className="fade-in">Welcome to the Burger Club !</h1>
+          
+          {/* <p className="slide-in-1">DELICIOUSLY</p>
+          <p className="slide-in-2">MOUTHWATERING</p>
+          <p className="slide-in-3"> BURGER</p> */}
+          <h1 style={{ margin: '0 0 20px', fontSize: "40px"  }}> Welcome to the Burger Club !</h1>
           <p className="slide-in-1">
             Indulge in a culinary journey like no other at The Burger Club! We invite you to savor the delightful symphony of flavors packed into our gourmet burgers. Each bite is a celebration of premium ingredients, meticulous preparation, and a passion for delivering a mouthwatering experience.
           </p>
           <p className="slide-in-2">
             At The Burger Club, we believe in the art of crafting the perfect burger – a blend of juicy patties, fresh vegetables, and savory sauces, all nestled within a soft, golden bun. Whether you're a meat lover, a vegetarian enthusiast, or an adventurous foodie, our diverse menu has something extraordinary for every palate.
           </p>
-          <p className="slide-in-3">
+          {/* <p className="slide-in-3">
             Join us in the celebration of good times, great company, and, of course, the most delicious burgers in town. Experience burger perfection at The Burger Club – where every bite tells a flavorful story!
-          </p>
+          </p> */}
         </div>
         <div className="image-container fade-in-image"> {/* Apply the animation class */}
           <img
