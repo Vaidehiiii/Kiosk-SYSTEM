@@ -14,7 +14,8 @@
 }
 
 .text-container {
-  flex: 2;
+  flex: 1;
+  padding-right: 5px;
 }
 
 .text-container h1 {
@@ -29,12 +30,14 @@
 .text-container p {
   font-family: "Playfair Display", serif; 
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-right: 2px;
 }
 
 .text-container .slide-in-1 {
   animation: slideIn 1s ease-in-out 1s; /* Delay for first paragraph */
   background-color: rgb(230, 223, 215, 0.6);
+  margin-right: 0px;
   /* font-family: "Apple Chancery";
   font-size: 60px; */
 }
@@ -56,14 +59,15 @@
 
 .image-container {
   flex: 1;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-top: 50px;
   display: flex;
   justify-content: flex-end;
 }
 
 .image-container img {
-  width: 100%;
+  width: 80%;
+  height: 90%;
   animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
 
@@ -101,5 +105,39 @@
   to {
     transform: translateX(0); /* Final position is normal */
     opacity: 1; /* Ends opaque */
+  }
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around; /* Distribute icons evenly */
+  animation: slideInFeatures 2s ease-in-out 1.5s; /* Animation with delay */
+}
+
+.feature {
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  align-items: center; /* Center-align icons and text */
+}
+
+.feature-icon {
+  color: #553c22; /* Dark brown for the icons */
+  font-size: 40px; /* Size of the icons */
+  margin-bottom: 10px; /* Space between icon and text */
+  transition: transform 0.3s; /* Smooth transition for hover */
+}
+
+.feature-icon:hover {
+  transform: scale(1.2); /* Scale-up effect on hover */
+}
+
+@keyframes slideInFeatures {
+  from {
+    transform: translateX(100px); /* Horizontal slide-in */
+    opacity: 0; /* Start transparent */
+  }
+  to {
+    transform: translateX(0); /* Normal position */
+    opacity: 1; /* Fully opaque */
   }
 }
